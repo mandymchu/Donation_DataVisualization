@@ -1,7 +1,12 @@
 ## Donation_DataVisualization
-In this project, a dataset from DonorsChoose.org is used to build an interactive data visualization that represents school donations broken down by different attributes.
+Developed a dashboard that represents school donations broken down by five attributes, which are donation date, location, resource type, poverty level and total number of donations, using data from DonorsChoose.org. 
 
-MongoDB, Python, JavaScript, Flask, D3.js, DC.js will be used.
+•	Perform data cleaning, transformation and dimension reduction using Principal component analysis (PCA), feature selection using MongoDB and Python.
+
+•	Build a webserver using Python, Flask and use MongoDB as backend database.
+
+•	Perform grouping, filtering, aggregating data using crossfilter.js, and develop interactive charts using d3.js and dc.js. 
+
 
 Problem:
 
