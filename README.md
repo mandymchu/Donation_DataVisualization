@@ -7,15 +7,9 @@ Developed a dashboard that represents school donations broken down by five attri
 
 •	Perform grouping, filtering, aggregating data using crossfilter.js, and develop interactive charts using d3.js and dc.js. 
 
+### How to browse the dashboard
+Just start mongoDB and run server.py. If on the page http://localhost:5000/ only could see a dashboard with empty charts, press CTRL+Shift+R for reloading the page, ignoring cache. Then an interactive data visualizaiton dashboard will be shown as below:
 
-Problem:
-
-On the page http://localhost:5000/donorschoose/projects projects data could be printed out. However, on the page http://localhost:5000/, only could see a dashboard with empty charts. The problem should be in the amount of data being loaded. 
-
-Solution:
-1. In charts.js, using:
-   var dateFormat = d3.time.format("%Y-%m-%d %H:%M:%S");
-2. Press CTRL+Shift+R for reloading the page, ignoring cache. 
 
 
 
