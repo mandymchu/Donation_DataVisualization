@@ -7,7 +7,7 @@ function makeGraphs(error, projectsJson, statesJson) {
 	
 	//Clean projectsJson data
 	var donorschooseProjects = projectsJson;
-	var dateFormat = d3.time.format("%Y-%m-%d");
+	var dateFormat = d3.time.format("%Y-%m-%d %H:%M:%S");
 	donorschooseProjects.forEach(function(d) {
 	    // Set all projects date days to 1, so all projects from the same month will have the same date
         d["date_posted"] = dateFormat.parse(d["date_posted"]);

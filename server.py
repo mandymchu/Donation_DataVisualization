@@ -25,8 +25,9 @@ def test():
 def donorschoose_projects():
     connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
     collection = connection[DBS_NAME][COLLECTION_NAME]
-    # projects = collection.find(projection=FIELDS, limit=1)
-    projects = collection.find({}, FIELDS, limit=1)
+    # projects = collection.find(projection=FIELDS)
+    projects = collection.find(projection=FIELDS, limit=500000)
+    #projects = collection.find({}, FIELDS, limit=1)
     json_projects = []
     for project in projects:
         json_projects.append(project)
@@ -36,3 +37,7 @@ def donorschoose_projects():
 
 if __name__ == "__main__":
 	app.run(host='0.0.0.0', port=5000, debug=True)
+
+# start mongoDB and run server.py. 
+# If on the page http://localhost:5000/ only could see a dashboard with empty charts, 
+# press CTRL+Shift+R for reloading the page, ignoring cache.
